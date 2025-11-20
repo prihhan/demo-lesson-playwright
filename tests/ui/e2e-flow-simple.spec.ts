@@ -17,6 +17,5 @@ test('login with correct credentials and verify order creation page', async ({ p
   const orderCreationPage = await authPage.signIn(USERNAME, PASSWORD)
   // verify at least few elements on the order creation page
   await expect(orderCreationPage.usernameField).toBeVisible()
-  await expect (orderCreationPage.orderButton).toBeVisible()
-
+  await expect(orderCreationPage.orderButton).toBeVisible()
 })
