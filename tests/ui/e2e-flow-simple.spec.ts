@@ -10,7 +10,7 @@ test('signIn button disabled when incorrect data inserted', async ({ page }) => 
   await authPage.passwordField.fill(faker.lorem.word(7))
   await expect(authPage.signInButton).toBeDisabled()
 })
-
+//
 test('login with correct credentials and verify order creation page', async ({ page }) => {
   const authPage = new LoginPage(page)
   await authPage.open()
