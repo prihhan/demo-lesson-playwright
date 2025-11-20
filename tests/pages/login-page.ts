@@ -1,4 +1,6 @@
-import { Locator, Page } from '@playwright/test'
+// import { Locator, Page } from '@playwright/test'
+
+import type { Locator, Page } from '@playwright/test'
 import { OrderPage } from './order-page'
 import { SERVICE_URL } from '../../config/env-data'
 
